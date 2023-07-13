@@ -4,6 +4,7 @@
     --border: 1px solid black;
     --header-size: 150px;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.5vw;
 }
 
 @media(max-width: 1000px){
@@ -156,8 +157,8 @@ nav {
     background: none;
     transition: .2s ease-out;
     position: fixed;
-    right: 20px;
-    top: 20px;
+    right: 3vh;
+    top: 4vh;
     z-index: 10;
 }
 
