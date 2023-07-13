@@ -88,7 +88,8 @@ th { background: lightgray; }
     padding-left: var(--border-space-left);
     padding-right: var(--border-space-right);
 }
-nav {
+
+/*nav {
     --item-shift: 10px;
     --item-space: 8px;  
 
@@ -96,7 +97,18 @@ nav {
     top: 30vh;
     left: calc(0.1*var(--border-space-left));
     width: calc(0.7*var(--border-space-left));
+}*/
+nav {
+    --item-shift: 10px;
+    --item-space: 8px;  
+
+    margin-top: -400px;
+    position: sticky;
+    top: 200px;
+    margin-left: calc(-0.9*var(--border-space-left));
+    width: calc(0.7*var(--border-space-left));
 }
+
 
 #nav-list {
     list-style: none;
@@ -156,11 +168,13 @@ nav {
 @media(max-width:1000px) {
     nav {
         --width: 300px;
+        position: fixed;
+        margin-top: 0;
+        top: 0;
         width: var(--width);
         padding: 5em 2em 0 0.3em;
         right: calc(-1*var(--width) - 5rem);
         left: auto;
-        top: 0;
         font-size: 1.1em;
         height: 100%;
         border-left: var(--border);
