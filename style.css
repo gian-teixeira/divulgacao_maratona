@@ -189,6 +189,7 @@ nav {
         pointer-events: auto;
     }
     .nav-item a { color: #333; }
+    ul { padding: 1rem; }
 
 }
 
