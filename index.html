@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <style>
+    .material-symbols-outlined {
+        vertical-align: bottom;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+    </style>
+    <title>Maratona SBC</title>
+</head>
+<body class="slide">
+    <header class="total-length">
+        <h1>Inscrições para a 1<sup>a</sup> Fase da Maratona de programação da UFSJ</h1>
+        <img src="img/balao.png" style="width: calc(0.4*var(--header-size));"/>
+        <button id="nav-button">&#9886;</button>
+    </header>
+    <nav>
+        <ul id="nav-list">
+            <li id="nav-title" class="nav-item primary"><a href="#">Informações</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <h2 id="evento">Evento</h2> 
+        <ul>
+            <li><b>Data:</b> 02 de setembro de 2023</li>
+            <li><b>Endereço:</b > Praça Frei Orlando, 170 - Centro, São João del 
+                Rei - MG, 36370-352</li>
+            <li><b>Referência:</b> UFSJ, Campus Santo Antônio (CSA)
+                <a class="gadget" style="--color: 85, 163, 104;"
+                    href="https://goo.gl/maps/c2YwHnjT6SdwTQDy8" target="__blank">Mapa
+                    <span class="material-symbols-outlined" 
+                        style="color:red">location_on</span>
+                </a>
+            </li>
+        </ul>
+
+        <h2 id="programacao">Programação</h2>
+        <p><i>Em breve.</i></p>
+
+        <h2 id="definicao">O que é a Maratona de Programação</h2>
+        <p>A Maratona de Programação é um evento da Sociedade Brasileira de Computação que existe desde o ano de 1996. Ela nasceu das competições regionais classificatórias para as finais mundiais do concurso de programação da ACM, o ACM International Collegiate Programming Contest, e é parte da regional sulamericana do concurso. Ela se destina a alunos de cursos de graduação e início de pós-graduação na área de Computação (Ciência da Computação, Engenharia de Computação, Sistemas de Informação, etc). A competição promove nos alunos a criatividade, a capacidade de trabalho em equipe, a busca de novas soluções de software e a habilidade de resolver problemas sob pressão.</p>
+        <p>Os times são compostos por três alunos, que tentam resolver durante 5 horas o maior número possível dos problemas que são entregues no início da competição. À sua disposição estes alunos têm apenas um computador e apenas material impresso (livros, listagens, manuais) para vencer a batalha contra o relógio e os problemas propostos. Os problemas envolvem, em geral, versões simplificadas de problemas do mundo real. Cada problema é descrito com uma historinha, que você deve interpretar, modelar como um problema computacional, resolver e implementar um programa com a solução.</p>
+
+        <h2 id="motivacao">Por que participar?</h2>
+        <p>Ao treinar para a Maratona, você vai desenvolver uma série de habilidades que são extremamente úteis não apenas para o seu curso de graduação, mas também para a sua vida profissional. Participando da competição, você vai ganhar um bom conhecimento sobre algoritmos, que vai te ajudar bastante ao longo do curso que você estiver realizando e da sua futura vida profissional. </p>
+        <p>Tão importante quanto isso (talvez até mais importante) é o fato de que essas competições desenvolvem a habilidade de modelar e resolver problemas computacionais complexos, partindo do zero. Essa é uma habilidade que será muito importante pelo resto da sua vida, e que talvez não seja tão enfatizada durante o curso de graduação. Em geral, ao fazer provas e trabalhos práticos de disciplinas do curso, ou é extremamente óbvio qual técnica deve ser usada para resolver um problema, ou então é fácil inferir pelo contexto: se o que você estudou desde a última prova foram algoritmos em grafos, então os problemas da próxima prova muito provavelmente são resolvidos com algum desses algoritmos. Na vida real, porém, as coisas não funcionam assim. Não importa se você vá para a indústria ou siga carreira acadêmica, você vai ter problemas, sem nenhum contexto, que você vai precisar modelar como problemas computacionais e resolver.</p>
+        <p>Resumindo: na vida real, ninguém vai te pedir explicitamente para resolver, digamos, o problema da mochila. Mas você vai encontrar problemas que podem ser modelados como o problema da mochila. Reconhecer isso para modelar e resolver problemas de forma eficiente é uma habilidade importante, que a maratona vai te ajudar a desenvolver.</p>
+
+        <h2 id="ajuda">Ajuda</h2>
+        <p>Aos interessados, o DCOMP/UFSJ se oferece a ajudar equipes iniciantes de outras escolas. Para isso, basta enviar um email para <a href="mailto:fazzion@ufsj.edu.br" target="__blank">fazzion@ufsj.edu.br</a> (Elverton Fazzion) que ficaremos felizes em marcar um dia no DCOMP para ajudar.</p>
+        
+        <h2 id="incricoes">Inscrições</h2>
+        <p>Se você deseja competir na Maratona, forme seu time! Procure um professor de seu curso para que ele ajude você e seu time sendo o técnico, e informe-o dos procedimentos de inscrição. Se você é professor de uma instituição de ensino superior da área de computação ou afim, reúna seus alunos e monte seus times! Se não houve sedes da Maratona na sua região recentemente, candidate sua instituição para sediar a Maratona!</p>
+        <p>A inscrição é feita em dois passos, que podem ser feitos em qualquer ordem:
+O técnico deve inscrever os times no site do ICPC, na sede da sua região (conforme as regras da competição) da competição South America/Brazil First Phase.
+O técnico deve providenciar o pagamento da taxa de inscrição no site do ECOS da SBC. Veja abaixo os valores para inscrever os times de sua instituição:</p>
+        <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Times</th>
+                <th>Insituição associada</th>
+                <th>Instituição não associada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Até 24/07/2023</td>
+                <td>1</td>
+                <td>R$160,00</td>
+                <td>R$200,00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>R$297,00</td>
+                <td>R$330,00</td>
+            </tr>
+            <tr>
+                <td>3+</td>
+                <td>R$104,00 / time</td>
+                <td>R$130,00 / time</td>
+            </tr>
+            <tr>
+                <td rowspan="3">De 25/07/2023 a<br/> 15/08/2023</td>
+                <td>1</td>
+                <td>R$260,00</td>
+                <td>R$300,00</td>
+            </tr>
+            <tr>    
+                <td>2</td>
+                <td>R$384,00</td>
+                <td>R$480,00</td>
+            </tr>
+            <tr>
+                <td>3+</td>
+                <td>R$160,00 / time</td>
+                <td>R$200,00 / time</td>
+            </tr>
+        </tbody>
+        </table>
+        <p><strong>IMPORTANTE</strong>: Verifique no site do ICPC que o status de seus times passe de pending para <em>accepted</em>
+quando os passos acima forem cumpridos. Caso isso não ocorra, entre em contato com a organização do 
+evento.</p>
+        <p>A inscrição na Maratona é institucional, por isso é fortemente recomendado que seja feita somente 
+pelo cadastro da Instituição responsável. Para se inscrever como Associada Institucional da SBC, deve
+acessar o ECOS utilizando o cadastro da Instituição, somente assim o sistema reconhecerá a associação Institucional e liberará as categorias para associados. Caso não tenha conhecimento do e-mail que está cadastrado no sistema da SBC e se a associação institucional está vigente, pode consultar a SBC.</p>
+        <p>A Final Brasileira da competição ocorrerá em três dias, começando com a recepção dos participantes numa quinta-feira. Na sexta-feira ocorrem a abertura, a sessão de aquecimento e outros eventos importantes. É fundamental a participação dos times em todos os dias! No sábado ocorre a competição e a festa de encerramento da competição. A organização do evento oferecerá auxílio para os times de fora da sede para hospedagem.</p>
+    </div>
+    <footer class="total-length">
+        <img src="img/sbc.png" class="logo"/>
+        <img src="img/ufsj.png" class="logo"/>
+        <img src="img/dcomp.png" class="logo"/>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
