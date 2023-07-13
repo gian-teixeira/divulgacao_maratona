@@ -4,19 +4,10 @@
     --border: 1px solid black;
     --header-size: 150px;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5vw;
+    font-size: 15px;
 }
 
-@media(max-width: 1000px){
-    :root { 
-        --border-space-left: 100px;
-        --border-space-right: 100px; 
-    }
-}
 
-@media(max-width: 1600px){
-    :root { --border-space-right: 100px }
-}
 
 body { 
     padding-right: var(--border-space-right); 
@@ -24,9 +15,9 @@ body {
     margin: 0;
 }
 
-h1 { font-weight: 600; }
-h2 { font-weight: 600; }
-h3 { font-weight: 600; }
+h1 { font-size: 1.5rem; font-weight: 600; }
+h2 { font-size: 1.3rem; font-weight: 600; }
+h2 { font-size: 1.1rem; font-weight: 600; }
 
 header {
     border-bottom: var(--border);
@@ -153,20 +144,27 @@ nav {
     pointer-events: none;
     border: none;
     outline: none;
-    font-size: 45px;
     background: none;
     transition: .2s ease-out;
     position: fixed;
-    right: 3vh;
-    top: 4vh;
+    right: 10px;
+    top: 45px;
     z-index: 10;
 }
-
-#nav-button.active { transform: rotate(180deg); }
+#nav-button .material-symbols-outlined { font-size: 50px; }
+/*#nav-button.active { transform: rotate(180deg); }*/
 
 #nav-button:hover { cursor: pointer; }
 
-@media(max-width:1000px) {
+@media(max-width: 1600px){
+    :root { --border-space-right: 100px }
+}
+
+@media(max-width: 1000px){
+    :root { 
+        --border-space-left: 100px;
+        --border-space-right: 100px; 
+    }
     nav {
         --width: 300px;
         position: fixed;
@@ -191,4 +189,16 @@ nav {
         pointer-events: auto;
     }
     .nav-item a { color: #333; }
+
 }
+
+@media(max-width: 600px){
+    :root { 
+        --border-space-left: 20px;
+        --border-space-right: 50px;
+        font-size: 10px;
+    }
+    header img { display: none; }
+    #nav-button { right: 0; }
+}
+
